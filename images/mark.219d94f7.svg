@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="100" preserveAspectRatio="none">
+<style>:root>svg{display:none}:root>svg:target{display:block}:root>svg>*{fill:#ffea00}</style>
+<svg xmlns="http://www.w3.org/2000/svg" id="inside" width="150" height="100" viewBox="0 0 150 100"><rect width="150" height="100"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="left" width="150" height="100" viewBox="0 0 150 100"><path fill-rule="evenodd" clip-rule="evenodd" d="M150,0H29.3C12.2,2.3,7.1,7.1,7.1,11.5v6.4c0,8.8,3.2,15.6,3.2,24.3c0,1.7-2.4,6-3.2,7.7c-2.3,5.2-13.8,9.2-1.4,15.2c6.3,3.1-4.9,7.7-4.9,11.7c0,4.5,3.2,9.6,3.2,14.1c0,2.9,0.1,5.9,12.7,9H150V0z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="right" width="150" height="100" viewBox="0 0 150 100"><path fill-rule="evenodd" clip-rule="evenodd" d="M134.1,35.9c0-1.9,15.9-8.4,15.9-10.2c0-1.6-22.2-2.7-22.2-4.4c0-2.6,19.1-8.3,19.1-11c0-4.3,4-8-19.1-10.3H0v100h127.8c4.6,0,9.3-4.6,9.3-7.2c0-1.8-9.3-4.9-9.3-6c0-3.4,15.9-6.4,15.9-9.9c0-1.2-15.9-3-15.9-4.2c0-4.5,12.7-10.6,12.7-15c0-4.1-12.7-6.6-12.7-10.7C127.8,42,134.1,40.9,134.1,35.9z"/></svg>
+</svg>

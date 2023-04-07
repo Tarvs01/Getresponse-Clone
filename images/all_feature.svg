@@ -1,0 +1,12 @@
+<svg id="all_feature_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42" height="12" viewBox="0 0 42 12">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_323" data-name="Rectangle 323" width="42" height="12" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_526" data-name="Group 526" clip-path="url(#clip-path)">
+    <circle id="Ellipse_108" data-name="Ellipse 108" cx="4.5" cy="4.5" r="4.5" transform="translate(16.5 1.5)" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <circle id="Ellipse_109" data-name="Ellipse 109" cx="4.5" cy="4.5" r="4.5" transform="translate(1.5 1.5)" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <circle id="Ellipse_110" data-name="Ellipse 110" cx="4.5" cy="4.5" r="4.5" transform="translate(31.5 1.5)" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+  </g>
+</svg>

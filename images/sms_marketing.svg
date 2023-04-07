@@ -1,0 +1,13 @@
+<svg id="sms_marketing_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35.056" height="43" viewBox="0 0 35.056 43">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_326" data-name="Rectangle 326" width="35.056" height="43" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_532" data-name="Group 532" clip-path="url(#clip-path)">
+    <path id="Path_2376" data-name="Path 2376" d="M30.552,10.389H16.646a3.016,3.016,0,0,0-3.09,2.991v7.339a3.027,3.027,0,0,0,3.09,3h1.091v3.385L22.1,23.722h8.362a3.027,3.027,0,0,0,3.09-3V13.38A2.885,2.885,0,0,0,30.552,10.389Z" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_2377" data-name="Path 2377" d="M23.722,24.884V37.97a3.374,3.374,0,0,1-3.333,3.53H4.833A3.374,3.374,0,0,1,1.5,37.97V5.029A3.373,3.373,0,0,1,4.833,1.5H20.389a3.373,3.373,0,0,1,3.333,3.529V9.313" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <line id="Line_321" data-name="Line 321" x2="6.667" transform="translate(9.278 6.206)" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_2378" data-name="Path 2378" d="M14.278,36.451a1.667,1.667,0,1,1-1.667-1.667,1.667,1.667,0,0,1,1.667,1.667" fill="#00baff"/>
+  </g>
+</svg>

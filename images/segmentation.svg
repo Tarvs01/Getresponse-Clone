@@ -1,0 +1,35 @@
+<svg id="segmentation_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39" height="39" viewBox="0 0 39 39">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_319" data-name="Rectangle 319" width="39" height="39" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_518" data-name="Group 518">
+    <g id="Group_517" data-name="Group 517" clip-path="url(#clip-path)">
+      <line id="Line_305" data-name="Line 305" y1="15" transform="translate(1.5 22.5)" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+      <line id="Line_306" data-name="Line 306" x1="15" transform="translate(1.5 37.5)" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+      <line id="Line_307" data-name="Line 307" y2="15" transform="translate(16.5 22.5)" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+      <line id="Line_308" data-name="Line 308" x2="15" transform="translate(1.5 22.5)" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+      <line id="Line_309" data-name="Line 309" y1="15" transform="translate(16.5 22.5)" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+      <line id="Line_310" data-name="Line 310" x1="15" transform="translate(16.5 37.5)" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+      <line id="Line_311" data-name="Line 311" y2="15" transform="translate(31.5 22.5)" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    </g>
+  </g>
+  <line id="Line_312" data-name="Line 312" x2="15" transform="translate(16.5 22.5)" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+  <g id="Group_520" data-name="Group 520">
+    <g id="Group_519" data-name="Group 519" clip-path="url(#clip-path)">
+      <line id="Line_313" data-name="Line 313" y1="15" transform="translate(1.5 7.5)" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+      <line id="Line_314" data-name="Line 314" x1="15" transform="translate(1.5 22.5)" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    </g>
+  </g>
+  <line id="Line_315" data-name="Line 315" y2="15" transform="translate(16.5 7.5)" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+  <g id="Group_522" data-name="Group 522">
+    <g id="Group_521" data-name="Group 521" clip-path="url(#clip-path)">
+      <line id="Line_316" data-name="Line 316" x2="15" transform="translate(1.5 7.5)" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+      <line id="Line_317" data-name="Line 317" y1="15" transform="translate(22.5 1.5)" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+      <line id="Line_318" data-name="Line 318" x1="15" transform="translate(22.5 16.5)" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+      <line id="Line_319" data-name="Line 319" y2="15" transform="translate(37.5 1.5)" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+      <line id="Line_320" data-name="Line 320" x2="15" transform="translate(22.5 1.5)" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

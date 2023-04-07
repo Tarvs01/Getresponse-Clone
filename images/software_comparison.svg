@@ -1,0 +1,23 @@
+<svg id="software_comparison_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40.585" height="43.5" viewBox="0 0 40.585 43.5">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_335" data-name="Rectangle 335" width="40.585" height="43.5" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_547" data-name="Group 547" clip-path="url(#clip-path)">
+    <path id="Path_2391" data-name="Path 2391" d="M12.278,34.5H4.984A3.484,3.484,0,0,1,1.5,31.016V4.984A3.484,3.484,0,0,1,4.984,1.5H23.325a3.484,3.484,0,0,1,3.484,3.484V9" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <rect id="Rectangle_334" data-name="Rectangle 334" width="26.807" height="33" rx="3.484" transform="translate(12.278 9)" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <circle id="Ellipse_111" data-name="Ellipse 111" cx="5.25" cy="5.25" r="5.25" transform="translate(20.431 20.25)" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_2392" data-name="Path 2392" d="M27.181,25.5a1.5,1.5,0,1,1-1.5-1.5,1.5,1.5,0,0,1,1.5,1.5" fill="#00baff"/>
+    <line id="Line_330" data-name="Line 330" y1="3.75" transform="translate(25.681 16.5)" fill="none" stroke="#00baff" stroke-miterlimit="10" stroke-width="3"/>
+    <line id="Line_331" data-name="Line 331" x1="2.204" y1="3.034" transform="translate(20.391 18.219)" fill="none" stroke="#00baff" stroke-miterlimit="10" stroke-width="3"/>
+    <line id="Line_332" data-name="Line 332" x1="3.566" y1="1.159" transform="translate(17.122 22.719)" fill="none" stroke="#00baff" stroke-miterlimit="10" stroke-width="3"/>
+    <line id="Line_333" data-name="Line 333" x1="3.566" y2="1.159" transform="translate(17.122 27.122)" fill="none" stroke="#00baff" stroke-miterlimit="10" stroke-width="3"/>
+    <line id="Line_334" data-name="Line 334" x1="2.204" y2="3.034" transform="translate(20.391 29.747)" fill="none" stroke="#00baff" stroke-miterlimit="10" stroke-width="3"/>
+    <line id="Line_335" data-name="Line 335" y2="3.75" transform="translate(25.681 30.75)" fill="none" stroke="#00baff" stroke-miterlimit="10" stroke-width="3"/>
+    <line id="Line_336" data-name="Line 336" x2="2.204" y2="3.034" transform="translate(28.767 29.747)" fill="none" stroke="#00baff" stroke-miterlimit="10" stroke-width="3"/>
+    <line id="Line_337" data-name="Line 337" x2="3.566" y2="1.159" transform="translate(30.674 27.122)" fill="none" stroke="#00baff" stroke-miterlimit="10" stroke-width="3"/>
+    <line id="Line_338" data-name="Line 338" y1="1.159" x2="3.566" transform="translate(30.674 22.719)" fill="none" stroke="#00baff" stroke-miterlimit="10" stroke-width="3"/>
+    <line id="Line_339" data-name="Line 339" y1="3.034" x2="2.204" transform="translate(28.767 18.219)" fill="none" stroke="#00baff" stroke-miterlimit="10" stroke-width="3"/>
+  </g>
+</svg>

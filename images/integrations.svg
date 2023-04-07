@@ -1,0 +1,10 @@
+<svg id="integrations_icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39.6" height="39" viewBox="0 0 39.6 39">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_328" data-name="Rectangle 328" width="39.6" height="39" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_536" data-name="Group 536" clip-path="url(#clip-path)">
+    <path id="Path_2386" data-name="Path 2386" d="M38.1,6.3H27.9M38.1,17.1H27.9m-4.8,4.8h4.8V1.5H23.1a10.2,10.2,0,1,0,0,20.4ZM12.9,11.7c-6.3,0-11.4,5.7-11.4,12v2.4A11.4,11.4,0,0,0,12.9,37.5H28.5" fill="none" stroke="#00baff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+  </g>
+</svg>
