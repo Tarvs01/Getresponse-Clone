@@ -441,10 +441,10 @@ hr {
     display: none;
   }
 
-  .header-mobile {
+  /* .header-mobile {
     display: flex;
     margin: 1em 30px;
-  }
+  } */
 
   .mobile-logo {
     width: 40px;
@@ -1114,22 +1114,26 @@ body {
 
 .bottom-prices ul li,
 .bluetick li {
-  font-size: 0.8rem;
   margin-bottom: 0.85em;
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 0.9rem;
   padding: 0 20px;
+  font-family: roboto, sans-serif;
 }
 
 .bluelist {
-  font-family: source31, sans-serif;
+  font-family: roboto, sans-serif;
   font-weight: 400;
   list-style-type: none;
 }
 
 .bluelist li {
   background-image: url(images/tick_icon_blue.52fe045b.svg);
+}
+
+.l3 {
+  font-size: 18px;
 }
 
 .yellowlist li {
@@ -1589,7 +1593,7 @@ body {
 
 .gdpr-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, max-content);
   grid-auto-flow: initial;
   margin: 1rem auto 4rem;
   grid-column-gap: 2rem;
@@ -1599,6 +1603,9 @@ body {
 .gdpr-item {
   font-size: 15px !important;
   align-self: center;
+  font-family: roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .gdpr-words a {
