@@ -13,6 +13,8 @@
   src: url("fonts/SourceSans3-VariableFont_wght.ttf");
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@500&display=swap");
+
 body {
   text-rendering: optimizeLegibility;
 }
@@ -174,6 +176,14 @@ header button:hover {
   font-weight: 400;
 }
 
+.first-four li {
+  /* font-family: "Roboto Flex", sans-serif; */
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px !important;
+  letter-spacing: 0.6px;
+}
+
 .product-hover-cont ul {
   display: block;
   font-weight: 400;
@@ -217,8 +227,10 @@ hr {
   max-width: 1200px;
   margin: 0 auto;
   color: black;
-  font-family: source31, sans-serif;
+  font-family: roboto, Arial, Helvetica, sans-serif;
   margin-top: 1em;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .hover-bottom div {
@@ -234,7 +246,7 @@ hr {
 }
 
 .product-hover-cont .header-heading {
-  font-size: 1.5em;
+  font-size: 1.5em !important;
   font-weight: 700;
   margin-bottom: 30px;
 }
@@ -265,7 +277,9 @@ hr {
 }
 
 .resources-link {
-  font-size: 1.3em;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
   margin-left: 0.3em;
 }
 
@@ -285,6 +299,12 @@ hr {
   max-width: 1200px;
   margin: auto;
   padding: 0 1em;
+}
+
+.only-three p {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .one-two-three-cont {
@@ -628,13 +648,68 @@ small {
   font-weight: 900;
   font-size: 35px;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 3em auto;
   padding: 0 40px;
   text-align: center;
+  font-family: source31, sans-serif;
 }
 
-.marketing-solutions-p p {
+.mark-cont {
+  display: inline;
+  position: relative;
+  margin-left: 10px;
+}
+
+.left-cont {
+  display: inline-block;
+  position: absolute;
+  left: -10px;
+  top: -4px;
+}
+
+.right-cont {
+  display: inline-block;
+  position: absolute;
+  right: -10px;
+  top: -4px;
+}
+
+.left-cont svg,
+.right-cont svg {
+  width: fit-content;
+  color: #ffea00;
+}
+
+.msolutions svg {
+  height: 50px;
+}
+
+.pricesec svg {
+  height: 50px;
+}
+
+.left-p-cont {
+  display: inline-block;
+  position: absolute;
+  left: -10px;
+  top: 0px;
+}
+
+.right-p-cont {
+  display: inline-block;
+  position: absolute;
+  right: -10px;
+  top: 0px;
+}
+
+.left-p-cont svg,
+.right-p-cont svg {
+  width: fit-content;
+  color: #ffea00;
+}
+
+.marketing-solutions-p .p {
   padding: 0;
   margin: 0;
 }
@@ -736,7 +811,7 @@ small {
 .mark-main {
   display: inline-block;
   position: relative;
-  margin-left: 10px;
+  margin-left: 12px;
 }
 
 .left-y-cont {
@@ -927,8 +1002,9 @@ body {
   font-weight: 600;
   font-size: 20px;
   width: fit-content;
-  max-width: 660px;
+  max-width: 700px;
   text-align: center;
+  margin: 15px 0 50px;
 }
 
 .prices-main-cont {
