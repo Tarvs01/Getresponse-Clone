@@ -1844,6 +1844,7 @@ footer {
 .footer-smalls ul {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   max-width: 1100px;
   width: 100%;
 }
@@ -1854,6 +1855,7 @@ footer {
   font-size: 13px;
   font-weight: 400;
   font-family: roboto, sans-serif;
+  margin: 8px 15px;
 }
 
 @media screen and (max-width: 770px) {
@@ -1867,3 +1869,7 @@ footer {
     margin: 0.5rem 0;
   }
 }
+
+/* Added some comments. No I didn't. */
+/* I actually did but then deleted them */
+/* Will add them later */
