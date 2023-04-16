@@ -48,3 +48,61 @@ function showHide() {
     document.querySelector(".close").style.display = "none";
   }
 }
+
+//Functionality for slider/carousel
+const slides = document.querySelectorAll(".slide");
+let slider = document.querySelector(".slider");
+
+slides.forEach((slide, indx) => {
+  slide.style.transform = `translateX(${(indx - 2) * 113}%)`;
+});
+
+const prevSlide = document.querySelector(".btn-prev");
+const nextSlide = document.querySelector(".btn-next");
+
+prevSlide.addEventListener("click", function () {
+  let slides = document.querySelectorAll(".slide");
+
+  console.log("previous");
+
+  let slideItems = [];
+  slides.forEach((item, index) => {
+    slideItems.push(item);
+  });
+
+  let last = slideItems.pop();
+
+  slider.prepend(last);
+
+  slides = document.querySelectorAll(".slide");
+
+  slides[2].style.opacity = "1";
+  slides[3].style.opacity = ".5";
+
+  slides.forEach((slide, indx) => {
+    slide.style.transform = `translateX(${(indx - 2) * 113}%)`;
+  });
+});
+
+nextSlide.addEventListener("click", function () {
+  let slides = document.querySelectorAll(".slide");
+  console.log("next");
+
+  let slideItems = [];
+  slides.forEach((item, index) => {
+    slideItems.push(item);
+  });
+
+  let first = slideItems.splice(0, 1)[0];
+
+  slider.append(first);
+
+  slides = document.querySelectorAll(".slide");
+
+  slides[2].style.opacity = "1";
+  slides[1].style.opacity = ".5";
+
+  slides.forEach((slide, indx) => {
+    slide.style.transform = `translateX(${(indx - 2) * 113}%)`;
+  });
+});

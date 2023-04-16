@@ -1309,6 +1309,7 @@ body {
 .join-business {
   padding-top: 12rem;
   background-color: #f1f3f5;
+  height: 1000px;
 }
 
 .join-business > h2 {
@@ -1870,6 +1871,152 @@ footer {
   }
 }
 
-/* Added some comments. No I didn't. */
-/* I actually did but then deleted them */
-/* Will add them later */
+/* Slider styles */
+.slider {
+  width: 95%;
+  max-width: 800px;
+  height: fit-content;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 50px;
+  gap: 30px;
+  /* overflow: hidden; */
+  padding-left: 50px;
+}
+
+.slide {
+  width: fit-content;
+  max-width: 700px;
+  height: fit-content;
+  min-height: 320px;
+  position: absolute;
+  transition: all 0.5s;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  padding: 56px 50px 50px;
+  box-shadow: 0 0 37px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0.5;
+  background-color: white;
+}
+
+@media screen and (max-width: 760px) {
+  .slider {
+    width: 80vw;
+    padding: 0;
+  }
+
+  .slide {
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    padding: 56px 20px 50px;
+  }
+
+  .slide img {
+    margin-bottom: 30px;
+  }
+
+  .btn-next {
+    right: -35px !important;
+    top: 250px !important;
+  }
+
+  .btn-prev {
+    top: 250px !important;
+    left: -35px !important;
+  }
+}
+
+.slide img {
+  width: 154px;
+  height: 154px;
+}
+
+.caro-words {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  z-index: 3;
+}
+
+.btn svg {
+  width: 20px;
+  height: fit-content;
+  background-color: transparent;
+}
+
+.btn-prev {
+  top: 160px;
+  left: calc(50% - 410px);
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+.btn-next {
+  top: 160px;
+  right: calc(50% - 405px);
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+
+@media screen and (max-width: 840px) {
+  .btn-next {
+    right: -5px;
+  }
+
+  .btn-prev {
+    left: -10px;
+  }
+}
+
+.caro-words h3 {
+  font-family: source31, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f262f;
+  letter-spacing: 0.02em;
+  margin-bottom: 22px;
+}
+
+.caro-words p {
+  letter-spacing: 0.025em;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4d555e;
+  margin-bottom: 14px;
+  font-family: roboto, sans-serif;
+  line-height: 1.35;
+}
+
+.caro-words h4 {
+  color: #4d555e;
+  font-size: 14px;
+  font-family: roboto, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+}
+
+.caro-words h5 {
+  font-family: roboto, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #7990a1;
+}
+
+.eight {
+  opacity: 1;
+}

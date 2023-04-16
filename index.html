@@ -1591,7 +1591,200 @@
         audiences online everywhere.
       </p>
 
-      <div class="carousel"></div>
+      <div class="slider">
+        <button class="btn btn-next">
+          <svg
+            height="57.5"
+            viewBox="0 0 95 57.5"
+            width="95"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 10.1C0 7.5 1 5 2.9 3 6.8-.9 13.2-.9 17.1 3l30.4 30.3L77.9 2.9C81.8-1 88.2-1 92.1 2.9s3.9 10.3 0 14.2L54.6 54.6c-1.9 1.9-4.4 2.9-7.1 2.9s-5.2-1.1-7.1-2.9L2.9 17.2C1 15.2 0 12.6 0 10.1z"
+              fill="#42b5e8"
+            ></path>
+          </svg>
+        </button>
+        <button class="btn btn-prev">
+          <svg
+            height="57.5"
+            viewBox="0 0 95 57.5"
+            width="95"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 10.1C0 7.5 1 5 2.9 3 6.8-.9 13.2-.9 17.1 3l30.4 30.3L77.9 2.9C81.8-1 88.2-1 92.1 2.9s3.9 10.3 0 14.2L54.6 54.6c-1.9 1.9-4.4 2.9-7.1 2.9s-5.2-1.1-7.1-2.9L2.9 17.2C1 15.2 0 12.6 0 10.1z"
+              fill="#42b5e8"
+            ></path>
+          </svg>
+        </button>
+
+        <div class="slide six">
+          <img src="images/slide-2.png" alt />
+          <div class="caro-words">
+            <h3>Autoresponder emails are much simpler to use</h3>
+            <p>
+              GetResponse's Autoresponders are so much simpler to use than the
+              other tools with faster and truly available 24/7 customer support
+              team.
+            </p>
+            <h4>Seth Mosley</h4>
+            <h5>Full Circle Music</h5>
+          </div>
+        </div>
+
+        <div class="slide seven">
+          <img src="images/slide-3.png" alt />
+          <div class="caro-words">
+            <h3>Better and cheaper than the competitors</h3>
+            <p>
+              Great platform, easy to make high-quality emails, landing pages,
+              ARs, forms, funnels.
+            </p>
+            <h4>Pamela Moss</h4>
+            <h5>The Soul Guide Inc</h5>
+          </div>
+        </div>
+
+        <div class="slide eight">
+          <img src="images/slide-4.png" alt />
+          <div class="caro-words">
+            <h3>GetResponse helps me run my business</h3>
+            <p>
+              I've been with them for a long time and I'm not going anywhere. I
+              love GetResponse's tracking, stats and features.
+            </p>
+            <h4>Nick Nilsson</h4>
+            <h5>BetterU, Inc.</h5>
+          </div>
+        </div>
+
+        <div class="slide one">
+          <img src="images/slide-5.png" alt />
+          <div class="caro-words">
+            <h3>The best user-friendly email automation</h3>
+            <p>
+              GetResponse provides the best automation and landing pages, which
+              helps me focus more on our business rather than spending time on
+              designing webpages.
+            </p>
+            <h4>Dibyajyoti Saikia</h4>
+            <h5>Hiedenberg Inc</h5>
+          </div>
+        </div>
+
+        <div class="slide two">
+          <img src="images/slide-6.png" alt />
+          <div class="caro-words">
+            <h3>I can reach my goals faster</h3>
+            <p>
+              GetResponse helps me to increase my revenues, improve my customer
+              experience and sell more products and services. I really love it.
+            </p>
+            <h4>Manuel Flaugnacco</h4>
+            <h5>Vendere Energia</h5>
+          </div>
+        </div>
+
+        <div class="slide three">
+          <img src="images/slide-7.png" alt />
+          <div class="caro-words">
+            <h3>Keep my business connected with clients</h3>
+            <p>
+              GetResponse helps my business to connect with its audience in a
+              clear and concise way. It’s easy and straightforward and if I get
+              stuck, I can reach out.
+            </p>
+            <h4>Nicola Lucie</h4>
+            <h5>The Feminine Principle</h5>
+          </div>
+        </div>
+
+        <div class="slide four">
+          <img src="images/slide-8.png" alt />
+          <div class="caro-words">
+            <h3>I love GetResponse interface</h3>
+            <p>
+              GetResponse is a must-try email marketing tool. It offers a lot of
+              features in one, well-designed platform.
+            </p>
+            <h4>Maxime Hamelin</h4>
+            <h5>Fondation de la Géosophie</h5>
+          </div>
+        </div>
+
+        <div class="slide five">
+          <img src="images/slide-1.png" alt />
+          <div class="caro-words">
+            <h3>Excellent customer service!</h3>
+            <p>
+              GetResponse gives me the ability to follow up with fresh leads and
+              keep them engaged with my brand.
+            </p>
+            <h4>Robert Waver</h4>
+            <h5>Infusion Marketing</h5>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        const slides = document.querySelectorAll(".slide");
+        let slider = document.querySelector(".slider");
+
+        slides.forEach((slide, indx) => {
+          slide.style.transform = `translateX(${(indx - 2) * 113}%)`;
+        });
+
+        const prevSlide = document.querySelector(".btn-prev");
+        const nextSlide = document.querySelector(".btn-next");
+
+        prevSlide.addEventListener("click", function () {
+          let slides = document.querySelectorAll(".slide");
+
+          console.log("previous");
+
+          let slideItems = [];
+          slides.forEach((item, index) => {
+            slideItems.push(item);
+          });
+
+          let last = slideItems.pop();
+
+          slider.prepend(last);
+
+          slides = document.querySelectorAll(".slide");
+
+          slides[2].style.opacity = "1";
+          slides[3].style.opacity = ".5";
+
+          slides.forEach((slide, indx) => {
+            slide.style.transform = `translateX(${(indx - 2) * 113}%)`;
+          });
+        });
+
+        nextSlide.addEventListener("click", function () {
+          let slides = document.querySelectorAll(".slide");
+          console.log("next");
+
+          let slideItems = [];
+          slides.forEach((item, index) => {
+            slideItems.push(item);
+          });
+
+          let first = slideItems.splice(0, 1)[0];
+
+          slider.append(first);
+
+          slides = document.querySelectorAll(".slide");
+
+          slides[2].style.opacity = "1";
+          slides[1].style.opacity = ".5";
+
+          slides.forEach((slide, indx) => {
+            slide.style.transform = `translateX(${(indx - 2) * 113}%)`;
+          });
+        });
+      </script>
     </section>
 
     <section class="helpful-resources">
