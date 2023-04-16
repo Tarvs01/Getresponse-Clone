@@ -1727,6 +1727,7 @@
         </div>
       </div>
 
+      <!-- "Why is there a script here?", you ask. Well, the script was not running when I put it in the index.js file. I will debug that later on but for now, the script stays in the HTML -->
       <script>
         const slides = document.querySelectorAll(".slide");
         let slider = document.querySelector(".slider");
@@ -1755,7 +1756,7 @@
           slides = document.querySelectorAll(".slide");
 
           slides[2].style.opacity = "1";
-          slides[3].style.opacity = ".5";
+          slides[3].style.opacity = ".2";
 
           slides.forEach((slide, indx) => {
             slide.style.transform = `translateX(${(indx - 2) * 113}%)`;
@@ -1778,7 +1779,7 @@
           slides = document.querySelectorAll(".slide");
 
           slides[2].style.opacity = "1";
-          slides[1].style.opacity = ".5";
+          slides[1].style.opacity = ".2";
 
           slides.forEach((slide, indx) => {
             slide.style.transform = `translateX(${(indx - 2) * 113}%)`;

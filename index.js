@@ -49,8 +49,8 @@ function showHide() {
   }
 }
 
-//Functionality for slider/carousel
-const slides = document.querySelectorAll(".slide");
+//Functionality for slider/carousel. Not currently running here though. Don't know why and will debug later. But for now, the script for the slider is in the HTML. Note that it is the same code, it is the location that is different.
+/* const slides = document.querySelectorAll(".slide");
 let slider = document.querySelector(".slider");
 
 slides.forEach((slide, indx) => {
@@ -105,4 +105,4 @@ nextSlide.addEventListener("click", function () {
   slides.forEach((slide, indx) => {
     slide.style.transform = `translateX(${(indx - 2) * 113}%)`;
   });
-});
+}); */
