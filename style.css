@@ -88,7 +88,7 @@ a {
 }
 
 header li:hover {
-  color: rgb(0, 162, 255);
+  color: var(--primary-color);
 }
 
 header li:hover > svg {
@@ -97,19 +97,20 @@ header li:hover > svg {
 
 header button:hover {
   background-color: white;
-  color: rgb(0, 186, 255);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
 
 .blue-white {
   color: white;
-  background-color: rgb(0, 186, 255);
+  background-color: var(--primary-color);
 }
 
 .header-button {
   width: fit-content;
   height: fit-content;
   padding: 0.5em 1em;
-  border: 1px solid rgb(0, 186, 255);
+  border: none;
   border-radius: 50px;
   margin-left: 1em;
   margin-top: 0.5em;
@@ -246,7 +247,7 @@ hr {
 }
 
 .hover-bottom div:hover {
-  color: rgb(0, 186, 255);
+  color: var(--primary-color);
 }
 
 .product-hover-cont .header-heading {
@@ -288,7 +289,7 @@ hr {
 }
 
 .resources-link:hover {
-  color: rgb(0, 186, 255);
+  color: var(--primary-color);
 }
 
 .resources-para {
@@ -335,7 +336,7 @@ hr {
 }
 
 .hover-blue {
-  color: rgb(0, 186, 255);
+  color: var(--primary-color);
   font-weight: 600;
 }
 
@@ -445,11 +446,6 @@ hr {
     display: none;
   }
 
-  /* .header-mobile {
-    display: flex;
-    margin: 1em 30px;
-  } */
-
   .mobile-logo {
     width: 40px;
     height: 40px;
@@ -514,7 +510,7 @@ hr {
 }
 
 .sm-heading:hover {
-  color: #00baff;
+  color: var(--primary-color);
 }
 
 .nav-item h1:hover,
@@ -605,7 +601,7 @@ small {
 }
 
 .hero-links span:hover {
-  color: rgb(0, 186, 255);
+  color: var(--primary-color);
 }
 
 .hero-links svg {
@@ -759,7 +755,7 @@ small {
 }
 
 .bh-img-cont svg {
-  color: rgb(0, 186, 255);
+  color: var(--primary-color);
   width: 63px;
   height: 63px;
   display: inline-block;
@@ -788,7 +784,7 @@ small {
   letter-spacing: 0.1em;
   font-size: 18px;
   font-weight: 700;
-  color: #00baff;
+  color: var(--primary-color);
 }
 
 .bh-words-cont a::after {
@@ -925,7 +921,7 @@ small {
   letter-spacing: 0.1em;
   font-size: 15px;
   font-weight: 700;
-  color: #00baff;
+  color: var(--primary-color);
 }
 
 .bh-other-card a::after {
@@ -945,7 +941,7 @@ small {
 }
 
 .bh-other-card li:hover {
-  color: #00baff;
+  color: var(--primary-color);
 }
 
 .bh-other-card li img {
@@ -973,7 +969,7 @@ small {
   width: fit-content;
   padding: 1rem 3rem;
   border: none;
-  background-color: #00baff;
+  background-color: var(--primary-color);
   font-weight: 700;
   border-radius: 2rem;
   letter-spacing: 2px;
@@ -1219,7 +1215,7 @@ body {
 }
 
 .lightform {
-  background-color: #00baff;
+  background-color: var(--primary-color);
 }
 
 @media screen and (max-width: 990px) {
@@ -1402,7 +1398,7 @@ body {
   letter-spacing: 0.1em;
   font-size: 18px;
   font-weight: 700;
-  color: #00baff;
+  color: var(--primary-color);
 }
 
 .link-container a::after {
@@ -1526,7 +1522,7 @@ body {
   letter-spacing: 0.1em;
   font-size: 17px;
   font-weight: 700;
-  color: #00baff;
+  color: var(--primary-color);
 }
 
 .need-us-words a::after {
@@ -1618,7 +1614,7 @@ body {
   letter-spacing: 0.1em;
   font-size: 18px;
   font-weight: 700;
-  color: #00baff;
+  color: var(--primary-color);
 }
 
 .gdpr-words a::after {
@@ -1735,7 +1731,7 @@ footer {
 
 .first-list li:hover,
 .second-list li:hover {
-  color: #00baff;
+  color: var(--primary-color);
 }
 
 .first-list {
@@ -1758,7 +1754,7 @@ footer {
 .new {
   font-size: 11px;
   padding: 2px 4px;
-  background-color: #00baff;
+  background-color: var(--primary-color);
   color: white;
   border-radius: 25px;
 }
@@ -1832,7 +1828,7 @@ footer {
 }
 
 .social-icons svg:hover {
-  fill: #00baff;
+  fill: var(--primary-color);
 }
 
 .accessibility {
@@ -2101,7 +2097,7 @@ footer {
 }
 
 .access-language:hover {
-  color: #00baff;
+  color: var(--primary-color);
 }
 
 .access-language svg {
