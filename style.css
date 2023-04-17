@@ -1871,7 +1871,7 @@ footer {
   }
 }
 
-/* Slider styles */
+/* Slider styles start */
 .slider {
   width: 95%;
   max-width: 800px;
@@ -2019,4 +2019,28 @@ footer {
 
 .eight {
   opacity: 1;
+}
+/* Slider styles end */
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.copyright svg {
+  width: 20px;
+}
+
+.copyright p {
+  margin: auto 10px;
+  text-align: center;
+  color: #656f7a;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.025em;
 }
