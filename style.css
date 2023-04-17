@@ -15,6 +15,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@500&display=swap");
 
+:root {
+  --primary-color: #00baff;
+}
+
 body {
   text-rendering: optimizeLegibility;
 }
@@ -1796,12 +1800,24 @@ footer {
 
 .small-icons {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 1rem;
   width: 100vw;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 700px) {
+  .small-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .accessibility {
+    margin-top: 40px;
+  }
 }
 
 .social-icons {
@@ -1821,6 +1837,12 @@ footer {
 
 .accessibility {
   display: flex;
+  flex-direction: row;
+  color: #436b77;
+  align-items: center;
+  font-size: 14px;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-weight: 400;
 }
 
 .access-img {
@@ -2043,4 +2065,58 @@ footer {
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.025em;
+}
+
+/* Styles for toggle button */
+.toggle-cont {
+  width: 30px;
+  height: 17px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: 1px solid rgb(197, 193, 193);
+  position: relative;
+}
+
+.toggle-button {
+  width: 20px;
+  height: 20px;
+  background-color: #436b77;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  top: -2px;
+  left: -5px;
+}
+
+.access-language {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+
+.access-language:hover {
+  color: #00baff;
+}
+
+.access-language svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.universal-access {
+  display: flex;
+  flex-direction: row;
+  margin: 0 20px;
+}
+
+.universal-access span {
+  display: block;
+  margin-left: 10px;
 }
