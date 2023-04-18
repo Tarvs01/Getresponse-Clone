@@ -593,7 +593,7 @@ small {
   letter-spacing: 1.6px;
 }
 
-/* .hero-links {
+.hero-links {
   list-style-type: none;
   font-family: source31, sans-serif;
   position: absolute;
@@ -603,9 +603,10 @@ small {
 
 @media screen and (max-width: 770px) {
   .hero-links {
-    top: -500px !important;
+    top: -400px !important;
+    right: -50px !important;
   }
-} */
+}
 
 .hero-links li {
   height: 70px;
