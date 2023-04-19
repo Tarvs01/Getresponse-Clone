@@ -417,16 +417,12 @@ hr {
   padding: 0 10px;
 }
 
-/* .email:focus~.floating-label,
-.email:not(:focus):valid~.floating-label {
-  top: 8px;
-  bottom: 10px;
-  left: 0px;
-  font-size: 11px;
-  opacity: 1;
-} */
+.email::placeholder {
+  opacity: 0;
+}
 
-.email:focus~.floating-label {
+.email:focus~.floating-label,
+.email:not(:placeholder-shown)~.floating-label {
   top: 8px;
   bottom: 10px;
   left: 0px;
