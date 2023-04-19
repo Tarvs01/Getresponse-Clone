@@ -1049,9 +1049,15 @@
       const slides = document.querySelectorAll(".slide");
       let slider = document.querySelector(".slider");
 
+      window.addEventListener("resize", () => {
+        let slides = document.querySelectorAll(".slide");
+        slider.style.height = `${slides[2].clientHeight}px`;
+      })
+
       slides.forEach((slide, indx) => {
         slide.style.transform = `translateX(${(indx - 2) * 113}%)`;
       });
+      slider.style.height = `${slides[2].clientHeight}px`;
 
       const prevSlide = document.querySelector(".btn-prev");
       const nextSlide = document.querySelector(".btn-next");
@@ -1072,6 +1078,7 @@
 
         slides = document.querySelectorAll(".slide");
 
+        slider.style.height = `${slides[2].clientHeight}px`;
         slides[2].style.opacity = "1";
         slides[3].style.opacity = ".2";
 
@@ -1095,6 +1102,7 @@
 
         slides = document.querySelectorAll(".slide");
 
+        slider.style.height = `${slides[2].clientHeight}px`;
         slides[2].style.opacity = "1";
         slides[1].style.opacity = ".2";
 
