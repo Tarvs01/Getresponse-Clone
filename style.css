@@ -417,8 +417,32 @@ hr {
   padding: 0 10px;
 }
 
-.email::placeholder {
-  color: black;
+/* .email:focus~.floating-label,
+.email:not(:focus):valid~.floating-label {
+  top: 8px;
+  bottom: 10px;
+  left: 0px;
+  font-size: 11px;
+  opacity: 1;
+} */
+
+.email:focus~.floating-label {
+  top: 8px;
+  bottom: 10px;
+  left: 0px;
+  font-size: 14px;
+  opacity: 1;
+}
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 41px;
+  font-size: 20px;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  transition: 0.2s ease all;
 }
 
 .hero-button {
