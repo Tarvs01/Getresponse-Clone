@@ -60,6 +60,7 @@ header {
   /*box-shadow: 0 0 30px 0 rgba(32,39,48,.08);*/
   z-index: 9999;
   width: 100vw !important;
+  overflow-x: hidden;
 }
 
 .header-cont {
@@ -395,9 +396,9 @@ hr {
 
 .hero-word strong {
   font-family: source31, sans-serif;
-  width: 500px;
+  width: 100%;
   max-width: 500px;
-  text-align: justify;
+  text-align: start;
   font-size: 26px;
   font-weight: 400;
   color: #202730;
@@ -413,6 +414,11 @@ hr {
   border: 1px solid rgb(212, 209, 209);
   color: black;
   border-radius: 3px;
+  padding: 0 10px;
+}
+
+.email::placeholder {
+  color: black;
 }
 
 .hero-button {
@@ -559,13 +565,25 @@ hr {
 @media screen and (max-width: 600px) {
   .hero-button {
     position: static;
-    margin-top: 2em;
-    margin-left: 18%;
-    font-size: 18px;
+    display: block;
+    /* margin-top: 2em;
+    margin-left: 18%; */
+    margin: 2em auto;
+    font-size: 14px;
+    width: 60vw;
+    padding: 10px;
   }
 
   .email {
     width: 90vw;
+    box-shadow: 0 10px 50px 0 rgba(32, 39, 48, .15);
+    letter-spacing: 1.2px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero-button {
+    width: 80vw;
   }
 }
 
@@ -601,6 +619,30 @@ small {
   right: 10px;
 }
 
+.hero-links li::after {
+  content: "\203A";
+  border-radius: 50%;
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  box-sizing: border-box;
+  padding-left: 2px;
+  font-weight: 900;
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #00baff;
+  font-size: 23px;
+  line-height: 1;
+  text-align: center;
+  box-shadow: 0 1px 5px 0 rgba(32, 39, 48, .1);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
 @media screen and (max-width: 770px) {
   .hero-links {
     top: -400px !important;
@@ -608,15 +650,20 @@ small {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .hero-links {
+    top: -70vw !important;
+  }
+}
+
 .hero-links li {
-  height: 70px;
+  height: fit-content;
   width: 200px;
   margin-top: 20px;
   background-color: #fff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 5px;
-  line-height: 20px;
-  line-height: 70px;
+  position: relative;
 }
 
 .hero-links span {
@@ -626,6 +673,18 @@ small {
   font-weight: 900;
   line-height: 20px;
   vertical-align: middle;
+}
+
+@media screen and (max-width: 500px) {
+  .hero-links span {
+    font-size: 14px;
+    width: 120px;
+  }
+
+  .hero-links svg {
+    width: 50px !important;
+    height: 50px !important;
+  }
 }
 
 .hero-links span:hover {
@@ -964,6 +1023,10 @@ small {
 
 body {
   overflow-x: hidden !important;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 .pricing {
