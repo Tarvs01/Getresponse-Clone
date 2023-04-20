@@ -21,6 +21,7 @@
 
 body {
   text-rendering: optimizeLegibility;
+  user-select: none;
 }
 
 mark {
@@ -74,6 +75,7 @@ header {
 
 .header-mobile {
   display: none;
+  padding: 0 20px 10px;
 }
 
 #header-search {
@@ -343,12 +345,6 @@ hr {
   margin-top: 2em;
 }
 
-.header-chevron {
-  line-height: 1;
-  font-size: 1.4em;
-  margin-left: 0.2em;
-}
-
 .hove-pic {
   margin-left: auto;
   margin-top: auto;
@@ -494,6 +490,14 @@ hr {
     display: none;
   }
 
+  .header-mobile {
+    display: flex;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+
   .mobile-logo {
     width: 40px;
     height: 40px;
@@ -529,13 +533,56 @@ hr {
   width: 100vw !important;
   left: 0;
   background-color: white;
-  min-height: 90vh;
+  height: 90vh;
   overflow-y: scroll !important;
-  border: 2px solid purple;
+  /*   border: 1px solid black; */
 }
 
 .nav-mobile ul {
   list-style-type: none;
+  padding-left: 0;
+}
+
+.nav-mobile ul li>h1,
+.nav-item h1 {
+  padding-left: 2rem;
+}
+
+.sm-menu ul {
+  margin-bottom: 30px;
+}
+
+.sm-menu ul li {
+  margin: 10px 0;
+}
+
+.sm-menu ul li:hover {
+  color: var(--primary-color) !important;
+}
+
+.sm-menu .header-heading {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: source31, Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* .sm-menu-cont {
+  border: 2px solid purple;
+  position: relative;
+} */
+
+/* .sm-menu {
+  display: flex;
+  position: absolute;
+} */
+
+.header-chevron {
+  font-size: 40px;
+  margin-left: 5px;
 }
 
 .sm-heading,
@@ -575,11 +622,59 @@ hr {
 }
 
 .sm-menu {
-  background-color: #dadada;
+  background-color: #F8FAFC;
+  display: none;
+  box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, .16);
+  position: relative;
+  padding-left: 20px;
+  animation-name: drop;
+  animation-duration: 0.1s;
+  animation-delay: 0;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes drop {
+  0% {
+    top: -15px;
+    opacity: .8;
+  }
+
+  100% {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 .sm-menu:hover {
   color: black;
+}
+
+.sm-menu .hover-bottom {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgb(204, 202, 202);
+}
+
+.sm-menu .hover-bottom li {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 16px;
+}
+
+.sm-menu .ul {
+  width: 100%;
+}
+
+.sm-menu .ul p {
+  width: 100% !important;
+}
+
+.sm-menu .ul img {
+  position: static !important;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 320px;
 }
 
 @media screen and (max-width: 600px) {

@@ -42,10 +42,13 @@ function showHide() {
     isShown = !isShown;
     document.querySelector(".open").style.display = "none";
     document.querySelector(".close").style.display = "block";
+    document.querySelector(".nav-mobile").style.display = "block";
   } else {
     isShown = !isShown;
     document.querySelector(".open").style.display = "block";
     document.querySelector(".close").style.display = "none";
+    document.querySelector(".nav-mobile").style.display = "none";
+    document.querySelector(".sm-menu").style.display = "none";
   }
 }
 
@@ -81,6 +84,17 @@ toggleButton.addEventListener("click", () => {
     document.querySelector(
       ".access-img"
     ).style.backgroundImage = `url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij4KICA8cGF0aCBpZD0iUGF0aF8zNDUiIGRhdGEtbmFtZT0iUGF0aCAzNDUiIGQ9Ik00NDAuMDM5LTcuMjg2YTI0LDI0LDAsMSwwLDI0LDI0QTI0LjAyNywyNC4wMjcsMCwwLDAsNDQwLjAzOS03LjI4NlptLjAyNCw5LjIzMWEzLjUxLDMuNTEsMCwxLDEtMy41MiwzLjVBMy41MSwzLjUxLDAsMCwxLDQ0MC4wNjMsMS45NDVabTExLjU4Nyw5LjVMNDQzLjkxNSwxMy4yYzAsMi4xMS0uMzUyLDUuOTc3LjM1MSw5LjQ5M2wyLjExLDYuMzI5Yy4wMjIuMDQ4LjA0MS4xLjA1OS4xNDdhMS44MTYsMS44MTYsMCwwLDEtMS4xMTQsMi4zMTRoLS43YTIuMzM5LDIuMzM5LDAsMCwxLTEuNzU4LTEuNDA2TDQ0MS4xLDI0LjFhMS4yMzgsMS4yMzgsMCwwLDEtLjM1Mi0uNywzLjUwOSwzLjUwOSwwLDAsMC0uMzUxLTEuMDU0aC0uMzUyQTEuNTQsMS41NCwwLDAsMCw0MzkuNywyMy40bC0uMzUyLjctMi4xMSw1Ljk3N2ExLjc5MywxLjc5MywwLDAsMS0xLjc1OCwxLjQwNmgtLjdhMi4xNDQsMi4xNDQsMCwwLDEtMS4wNTQtMi40NjFsMi4xMDktNi4zMjlhMjkuODYzLDI5Ljg2MywwLDAsMCwuMzUyLTkuNDkzbC03LjczNS0xLjQwNmExLjkzLDEuOTMsMCwwLDEtMS40MDctMi4xMSwyLjM3NCwyLjM3NCwwLDAsMSwyLjExLTEuNDA2LDU1LjYxNiw1NS42MTYsMCwwLDAsNy4zODMsMS40MDZjMS4wNTUsMCwyLjgxMy4zNTIsMy41MTYuMzUyLDEuMDU1LDAsMi44MTMtLjM1MiwzLjUxNi0uMzUyLDEuNzU4LS4zNTEsNy4zODQtMS40MDYsNy4zODQtMS40MDZhMS45MjksMS45MjksMCwwLDEsMi4xMDksMS40MDZDNDUzLjA1NiwxMC43MzksNDUyLjcsMTEuNDQyLDQ1MS42NSwxMS40NDJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDE2LjAzOSA3LjI4NikiIGZpbGw9IiM0YTViNjgiLz4KPC9zdmc+Cg==)`;
+  }
+});
+
+let smallProductsShown = false;
+
+document.querySelector(".sm-product").addEventListener("click", () => {
+  smallProductsShown = !smallProductsShown;
+  if (smallProductsShown) {
+    document.querySelector(".sm-menu").style.display = "block";
+  } else {
+    document.querySelector(".sm-menu").style.display = "none";
   }
 });
 
