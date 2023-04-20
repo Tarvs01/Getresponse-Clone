@@ -60,7 +60,7 @@ header {
   /*box-shadow: 0 0 30px 0 rgba(32,39,48,.08);*/
   z-index: 9999;
   width: 100vw !important;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .header-cont {
