@@ -677,6 +677,27 @@ hr {
   max-width: 320px;
 }
 
+.res-menu {
+  padding-top: 15px;
+}
+
+.res-menu .one-two-three-cont {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.res-menu .one-two-three-cont p {
+  color: #345874;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+}
+
+.res-menu .one-two-three-cont>img {
+  display: block;
+  width: 100%;
+}
+
 @media screen and (max-width: 600px) {
   .hero-button {
     position: static;

@@ -48,7 +48,8 @@ function showHide() {
     document.querySelector(".open").style.display = "block";
     document.querySelector(".close").style.display = "none";
     document.querySelector(".nav-mobile").style.display = "none";
-    document.querySelector(".sm-menu").style.display = "none";
+    document.querySelector(".prod-menu").style.display = "none";
+    document.querySelector(".res-menu").style.display = "none";
   }
 }
 
@@ -88,14 +89,37 @@ toggleButton.addEventListener("click", () => {
 });
 
 let smallProductsShown = false;
+let smallResourcesShown = false;
 
 document.querySelector(".sm-product").addEventListener("click", () => {
   smallProductsShown = !smallProductsShown;
   if (smallProductsShown) {
-    document.querySelector(".sm-menu").style.display = "block";
+    document.querySelector(".prod-menu").style.display = "block";
   } else {
-    document.querySelector(".sm-menu").style.display = "none";
+    document.querySelector(".prod-menu").style.display = "none";
   }
+});
+
+document.querySelector(".sm-resources").addEventListener("click", () => {
+  smallResourcesShown = !smallResourcesShown;
+  if (smallResourcesShown) {
+    document.querySelector(".res-menu").style.display = "block";
+  } else {
+    document.querySelector(".res-menu").style.display = "none";
+  }
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 768) {
+    document.querySelector(".nav-mobile").style.display = "none";
+  }
+  isToggled = false;
+  smallProductsShown = false;
+  smallResourcesShown = false;
+  document.querySelector(".res-menu").style.display = "none";
+  document.querySelector(".prod-menu").style.display = "none";
+  document.querySelector(".open").style.display = "block";
+  document.querySelector(".close").style.display = "none";
 });
 
 //Functionality for slider/carousel. Not currently running here though. Don't know why and will debug later. But for now, the script for the slider is in the HTML. Note that it is the same code, it is the location that is different.
