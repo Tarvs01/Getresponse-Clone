@@ -139,11 +139,6 @@ header button:hover {
   margin-top: 0.5em;
 }
 
-.header-product:hover .product-hover-cont {
-  display: block;
-  animation: drop 0.2s linear forwards;
-}
-
 .header-product {
   margin: 3em 0;
   padding: 1.4em 0;
@@ -154,20 +149,7 @@ header button:hover {
   padding: 1.4em 0;
 }
 
-.header-resources:hover .resources-cont {
-  display: block;
-  animation: drop 0.2s linear forwards;
-}
-
-.resources-cont:hover {
-  display: block;
-}
-
-.product-hover-cont:hover {
-  display: block;
-}
-
-@keyframes drop {
+@keyframes dropp {
   from {
     top: 60%;
     opacity: 0.5;
@@ -177,6 +159,18 @@ header button:hover {
     top: 100%;
     opacity: 1;
   }
+}
+
+.header-product:hover .product-hover-cont,
+.header-resources:hover .resources-cont {
+  display: block;
+  animation: dropp 0.2s linear forwards;
+  -webkit-animation: dropp 0.2s linear forwards;
+}
+
+.resources-cont:hover,
+.product-hover-cont:hover {
+  display: block;
 }
 
 .product-hover-cont {
