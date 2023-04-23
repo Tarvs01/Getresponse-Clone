@@ -435,6 +435,7 @@ hr {
   font-family: roboto, Arial, Helvetica, sans-serif;
   font-weight: 500;
   transition: 0.2s ease all;
+  color: #303741;
 }
 
 .hero-button {
@@ -583,6 +584,12 @@ hr {
 .header-chevron {
   font-size: 40px;
   margin-left: 5px;
+}
+
+.header-chevron-l {
+  font-size: 30px;
+  position: relative;
+  top: 2px;
 }
 
 .sm-heading,
