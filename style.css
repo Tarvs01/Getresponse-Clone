@@ -137,6 +137,7 @@ header button:hover {
   border-radius: 50px;
   margin-left: 1em;
   margin-top: 0.5em;
+  border: 1px solid var(--primary-color);
 }
 
 .header-product {
