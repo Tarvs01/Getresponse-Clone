@@ -370,6 +370,7 @@ hr {
 .hero {
   font-family: sourcesans, sans-serif;
   margin-top: 68px;
+  padding-top: 40px;
 }
 
 .hero-word {
@@ -2326,36 +2327,64 @@ footer {
 }
 
 .banner {
-  width: 100vw;
-  background-color: #00baff;
+  color: white;
+  text-align: center;
   position: absolute;
   top: 100%;
-  background-image: url(https://us-wn.gr-cdn.com/_next/static/media/bg.339832ec.svg);
-  color: white;
+  z-index: -1;
+  min-height: 70px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #00baff url(https://us-wn.gr-cdn.com/_next/static/media/bg.339832ec.svg) 50% no-repeat;
+  background-size: auto 100%;
+  ;
+  width: 100vw;
 }
 
 .banner-words-cont {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 100vw;
+  max-width: 1200px;
+  margin: 14px auto 10px;
 }
 
 .ai-image {
-  width: 90px;
-  height: 90px;
+  position: relative;
+}
+
+.ai-image::before {
+  content: "";
+  position: absolute;
   background-image: url(https://us-wn.gr-cdn.com/_next/static/media/ico_1.bb4aed69.svg);
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 91px;
+  height: 91px;
+  right: 31px;
+  top: -15px;
 }
 
 .mail-gen {
   margin: 0 10px;
+  display: flex;
 }
 
 .mail-gen h2 {
   color: rgb(2, 7, 42);
   font-size: 24px;
   font-weight: 900;
-  font-family: source31;
+  font-family: source31, sans-serif;
+  margin-top: 0 !important;
+}
+
+.mail-gen h5 {
+  font-size: 14px;
+  font-weight: 900;
+  font-family: source31, sans-serif;
+  margin: 0;
 }
 
 .ba-learn {
@@ -2367,4 +2396,20 @@ footer {
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: roboto, sans-serif;
+}
+
+.ba-learn:hover {
+  background-color: #FFD200;
+  color: black;
+  border: none;
+}
+
+.banner-text {
+  font-family: source31, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  padding: 0 20px;
 }
