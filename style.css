@@ -438,7 +438,7 @@ hr {
   position: absolute;
   pointer-events: none;
   left: 10px;
-  top: 41px;
+  top: 45px;
   font-size: 20px;
   font-family: roboto, Arial, Helvetica, sans-serif;
   font-weight: 500;
@@ -457,6 +457,11 @@ hr {
   position: relative;
   left: -80px;
   top: -1px;
+  box-shadow: 0 2px 18px 0 rgba(0, 0, 0, .2);
+}
+
+.hero-button:hover {
+  background-color: #00A2FF;
 }
 
 .hero-image {
@@ -484,7 +489,6 @@ hr {
   }
 
   .hero-links-cover {
-    /* float: right; */
     position: absolute;
     right: 20px;
   }
@@ -522,6 +526,13 @@ hr {
     margin: 0 auto;
   }
 
+  .hero-word {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+
   .icon-size {
     width: 40px;
     height: 40px;
@@ -529,11 +540,17 @@ hr {
 
   .hero-button {
     position: absolute;
+    /* left: 38vw; */
+    left: unset !important;
     right: 0 !important;
-    left: 50%;
-    top: 33px;
+    top: 36px;
     font-size: 14px;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.6px;
+    font-size: 18px;
+  }
+
+  .email {
+    width: 70vw;
   }
 }
 
