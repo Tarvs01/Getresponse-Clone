@@ -5,8 +5,10 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+//uncomment the below code and the appropriate HTML code to see the typewriter. The HTML is in the hero section.
+//The typewriter was a part of the site when I got there. It has currently being removed but I don't want to remove the code here yet
 //Controls the typing on the hero. The Get growing, leads and the rest
-async function type() {
+/* async function type() {
   let times = 0;
   let delay = 150;
   let still = 500;
@@ -33,9 +35,9 @@ async function type() {
     }
     await sleep(50);
   }
-}
+} */
 
-type();
+//type();
 
 function showHide() {
   if (!isShown) {

@@ -464,6 +464,19 @@ hr {
   background-color: #00A2FF;
 }
 
+.hero-title {
+  width: 500px;
+}
+
+.hero-title h1 {
+  width: fit-content;
+  font-size: 60px;
+  font-weight: 900;
+  color: #1f262f;
+  font-family: source31, sans-serif;
+  display: inline-block;
+}
+
 .hero-image {
   position: absolute;
   top: -18em;
@@ -486,6 +499,16 @@ hr {
     left: 0;
     width: 90vw;
     overflow: hidden;
+  }
+
+  .hero-title {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero-title h1 {
+    font-size: 40px;
   }
 
   .hero-links-cover {
