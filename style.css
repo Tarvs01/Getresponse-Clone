@@ -66,6 +66,7 @@ header {
 
 .header-cont {
   display: flex;
+  width: 98vw;
 }
 
 #header-logo1 {
@@ -75,7 +76,7 @@ header {
 
 .header-mobile {
   display: none;
-  padding: 0 20px 10px;
+  padding: 10px 20px 20px;
 }
 
 #header-search {
@@ -406,13 +407,18 @@ hr {
 
 .email {
   margin-top: 2em;
-  width: 400px;
+  width: 300px;
   height: 50px;
   font-family: roboto, sans-serif;
   border: 1px solid rgb(212, 209, 209);
-  color: black;
+  color: #7990a1 !important;
+  font-size: 18px;
   border-radius: 3px;
   padding: 0 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
 }
 
 .email::placeholder {
@@ -450,6 +456,7 @@ hr {
   letter-spacing: 2px;
   position: relative;
   left: -80px;
+  top: -1px;
 }
 
 .hero-image {
@@ -2326,28 +2333,68 @@ footer {
   margin-left: 10px;
 }
 
+body {
+  position: relative;
+}
+
 .banner {
   color: white;
   text-align: center;
-  position: absolute;
-  top: 100%;
-  z-index: -1;
+  position: fixed;
+  z-index: 10000000;
+  top: 67px;
   min-height: 70px;
   box-sizing: border-box;
   overflow: hidden;
   background: #00baff url(https://us-wn.gr-cdn.com/_next/static/media/bg.339832ec.svg) 50% no-repeat;
   background-size: auto 100%;
-  ;
   width: 100vw;
+}
+
+@media screen and (max-width: 980px) {
+  .banner {
+    position: static;
+    margin-top: 67px;
+  }
+
+  .hero {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .banner {
+    margin-top: 80px;
+  }
 }
 
 .banner-words-cont {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100vw;
+  width: 95vw;
   max-width: 1200px;
   margin: 14px auto 10px;
+}
+
+@media screen and (max-width: 760px) {
+  .banner-words-cont {
+    flex-direction: column;
+  }
+
+  .ai-image::before {
+    content: none !important;
+  }
+
+  .mail-gen h5 {
+    display: none;
+  }
+
+  .banner-text {
+    text-align: center !important;
+    margin: 6px 0 10px;
+  }
 }
 
 .ai-image {
@@ -2370,6 +2417,7 @@ footer {
 .mail-gen {
   margin: 0 10px;
   display: flex;
+  flex-shrink: 0;
 }
 
 .mail-gen h2 {
@@ -2390,7 +2438,7 @@ footer {
 .ba-learn {
   background-color: #ffea00;
   border: none;
-  padding: 7px 18px;
+  padding: 10px 20px;
   border-radius: 40px;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
@@ -2399,6 +2447,7 @@ footer {
   font-size: 13px;
   font-weight: 500;
   font-family: roboto, sans-serif;
+  flex-shrink: 0;
 }
 
 .ba-learn:hover {
@@ -2412,4 +2461,5 @@ footer {
   font-size: 19px;
   font-weight: 700;
   padding: 0 20px;
+  text-align: left;
 }
