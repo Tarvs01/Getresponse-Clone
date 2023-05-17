@@ -17,6 +17,9 @@
 
 :root {
   --primary-color: #00baff;
+  --main-yellow: #ffea00;
+  --white: #ffffff;
+  --black: #000000;
 }
 
 body {
@@ -25,7 +28,7 @@ body {
 }
 
 mark {
-  background-color: #ffea00;
+  background-color: var(--main-yellow);
 }
 
 .marke {
@@ -57,7 +60,7 @@ header {
   font-size: 15px;
   padding-top: 10px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  background-color: white;
+  background-color: var(--white);
   /*box-shadow: 0 0 30px 0 rgba(32,39,48,.08);*/
   z-index: 9999;
   width: 100vw !important;
@@ -120,13 +123,13 @@ header li:hover>svg {
 }
 
 header button:hover {
-  background-color: white;
+  background-color: var(--white);
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
 
 .blue-white {
-  color: white;
+  color: var(--white);
   background-color: var(--primary-color);
 }
 
@@ -185,7 +188,7 @@ header button:hover {
   width: 100vw;
   margin: 0;
   padding: 2em 0;
-  color: black;
+  color: var(--black);
   font-family: source31, sans-serif;
   background-color: #f9fbfd;
   /*box-shadow: inset 10px 10px 30px 10px rgba(32,39,48,.08);*/
@@ -251,7 +254,7 @@ hr {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
-  color: black;
+  color: var(--black);
   font-family: roboto, Arial, Helvetica, sans-serif;
   margin-top: 1em;
   font-weight: 700;
@@ -286,7 +289,7 @@ hr {
   width: 100vw;
   margin: 0;
   padding: 2em 0;
-  color: black;
+  color: var(--black);
   font-family: source31, sans-serif;
   background-color: #f9fbfd;
   /*box-shadow: inset 10px 10px 30px 10px rgba(32,39,48,.08);*/
@@ -507,6 +510,10 @@ hr {
     text-align: center;
   }
 
+  .hero-word strong {
+    text-align: center;
+  }
+
   .hero-title h1 {
     font-size: 40px;
   }
@@ -582,7 +589,7 @@ hr {
   top: 100%;
   width: 100vw !important;
   left: 0;
-  background-color: white;
+  background-color: var(--white);
   height: 90vh;
   overflow-y: scroll !important;
   /*   border: 1px solid black; */
@@ -647,7 +654,7 @@ hr {
 }
 
 .nav-mobile ul>li:hover {
-  color: black;
+  color: var(--black);
 }
 
 .nav-mobile>ul>li {
@@ -704,7 +711,7 @@ hr {
 }
 
 .sm-menu:hover {
-  color: black;
+  color: var(--black);
 }
 
 .sm-menu .hover-bottom {
@@ -1000,6 +1007,12 @@ small {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .bh-card-cont {
+    flex-direction: column;
+  }
+}
+
 .bh-img-cont svg {
   color: var(--primary-color);
   width: 63px;
@@ -1022,7 +1035,7 @@ small {
 }
 
 .bh-words-cont mark {
-  background-color: #ffea00;
+  background-color: var(--main-yellow);
 }
 
 .bh-words-cont a {
@@ -1072,7 +1085,7 @@ small {
 .right-y-cont svg {
   height: 42px;
   width: fit-content;
-  color: #ffea00;
+  color: var(--main-yellow);
 }
 
 .bh-other-cards {
@@ -1203,7 +1216,7 @@ small {
   width: 60vw;
   max-width: 500px;
   align-self: center;
-  color: white;
+  color: var(--white);
   height: fit-content;
   width: fit-content;
   padding: 1rem 3rem;
@@ -1212,6 +1225,15 @@ small {
   font-weight: 700;
   border-radius: 2rem;
   letter-spacing: 2px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.explore-features-cont button:hover {
+  background-color: #00A2FF;
 }
 
 body {
@@ -1241,10 +1263,11 @@ html {
   font-weight: 900;
   align-self: center;
   text-align: center;
+  padding: 0 15px;
 }
 
 .pricing>p {
-  color: white;
+  color: var(--white);
   align-self: center;
   font-weight: 600;
   font-size: 20px;
@@ -1371,10 +1394,12 @@ html {
   font-family: roboto, sans-serif;
   font-weight: 400;
   list-style-type: none;
+  padding-left: 0;
 }
 
 .bluelist li {
   background-image: url(images/tick_icon_blue.52fe045b.svg);
+  margin: 0;
 }
 
 .l3 {
@@ -1387,11 +1412,11 @@ html {
 
 .darkbg {
   background-color: #202730;
-  color: white;
+  color: var(--white);
 }
 
 .whitebg {
-  background-color: white;
+  background-color: var(--white);
   color: #202730;
 }
 
@@ -1423,8 +1448,8 @@ html {
 .pricing-button {
   width: fit-content;
   height: fit-content;
-  padding: 0.5rem 2rem;
-  background-color: #ffea00;
+  padding: 0.8rem 2rem;
+  background-color: var(--main-yellow);
   display: block;
   margin: 3rem auto 0;
   border: none;
@@ -1434,6 +1459,15 @@ html {
   letter-spacing: 0.1em;
   font-size: 16px;
   color: #1f262f;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.pricing-button:hover {
+  background-color: #FFD200;
 }
 
 .ready-form-cont {
@@ -1525,7 +1559,7 @@ html {
 .ready-form h1 {
   max-width: 330px;
   font-size: 35px;
-  color: white;
+  color: var(--white);
   text-align: left;
   font-weight: 900;
   letter-spacing: 0.02em;
@@ -1549,13 +1583,22 @@ html {
   width: 330px;
   padding: 0.6rem 1.8rem;
   border: none;
-  background-color: #ffea00;
+  background-color: var(--main-yellow);
   letter-spacing: 0.1em;
   font-family: roboto, sans-serif;
   border-radius: 1.5rem;
   margin-left: 1.5rem;
   font-weight: 700;
   color: #1f262f;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+.ready-form>button:hover {
+  background-color: #FFD200;
 }
 
 .join-business {
@@ -1786,7 +1829,7 @@ html {
 }
 
 .need-us-words h4 {
-  background-color: #ffea00;
+  background-color: var(--main-yellow);
   font-size: 16px;
   font-weight: 700;
   font-family: source31, sans-serif;
@@ -2010,7 +2053,7 @@ footer {
   font-size: 11px;
   padding: 2px 4px;
   background-color: var(--primary-color);
-  color: white;
+  color: var(--white);
   border-radius: 25px;
 }
 
@@ -2170,7 +2213,7 @@ footer {
   padding: 56px 50px 50px;
   box-shadow: 0 0 37px 5px rgba(0, 0, 0, 0.1);
   opacity: 0.2;
-  background-color: white;
+  background-color: var(--white);
 }
 
 @media screen and (max-width: 760px) {
@@ -2378,10 +2421,10 @@ body {
 }
 
 .banner {
-  color: white;
+  color: var(--white);
   text-align: center;
   position: fixed;
-  z-index: 10000000;
+  z-index: 10;
   top: 67px;
   min-height: 70px;
   box-sizing: border-box;
@@ -2454,6 +2497,10 @@ body {
   top: -15px;
 }
 
+.banner-words-cont {
+  text-align: start;
+}
+
 .mail-gen {
   margin: 0 10px;
   display: flex;
@@ -2476,7 +2523,7 @@ body {
 }
 
 .ba-learn {
-  background-color: #ffea00;
+  background-color: var(--main-yellow);
   border: none;
   padding: 10px 20px;
   border-radius: 40px;
@@ -2492,7 +2539,7 @@ body {
 
 .ba-learn:hover {
   background-color: #FFD200;
-  color: black;
+  color: var(--black);
   border: none;
 }
 
